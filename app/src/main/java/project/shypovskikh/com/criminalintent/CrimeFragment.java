@@ -57,7 +57,7 @@ public class CrimeFragment extends android.support.v4.app.Fragment {
                }
            });
 
-       /*    mDateButton = (Button)view.findViewById(R.id.crime_date);
+         mDateButton = (Button)view.findViewById(R.id.crime_date);
            mDateButton.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
@@ -66,13 +66,14 @@ public class CrimeFragment extends android.support.v4.app.Fragment {
            });
            mDateButton.setEnabled(false);
            mDateButton.setText(mCrime.getmDate().toString());
-           mSolvedCheckBox = (CheckBox)view.findViewById(R.id.crime_solved);
-           mSolvedCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-               @Override
-               public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                   mCrime.setmSolved(isChecked);
-               }
-           }); */
+
+          mSolvedCheckBox = (CheckBox)view.findViewById(R.id.crime_solved);
+          mSolvedCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+              @Override
+              public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                  mCrime.setmSolved(isChecked);
+              }
+          });
            return view;
     }
 
